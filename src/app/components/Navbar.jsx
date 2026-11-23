@@ -60,14 +60,14 @@ export default function Navbar() {
             {!isLoggedIn ? (
               <>
                 <Link
-                  href="/login"
+                  href="/auth/signin"
                   onClick={() => setIsLoggedIn(true)} // Demo toggle; remove in production
                   className="px-4 py-2 text-sm font-semibold text-pink-600 border border-pink-600 rounded-full hover:bg-pink-50 transition"
                 >
                   Login
                 </Link>
                 <Link
-                  href="/signup"
+                  href="/auth/signup"
                   className="px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full hover:bg-pink-700 transition"
                 >
                   Sign Up
@@ -127,7 +127,7 @@ export default function Navbar() {
             {!isLoggedIn ? (
               <>
                 <Link
-                  href="/login"
+                  href="/auth/signin"
                   onClick={() => {
                     setIsLoggedIn(true);
                     setIsMobileMenuOpen(false);
@@ -137,7 +137,7 @@ export default function Navbar() {
                   Login
                 </Link>
                 <Link
-                  href="/signup"
+                  href="/auth/signup"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="w-full text-center px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full"
                 >
