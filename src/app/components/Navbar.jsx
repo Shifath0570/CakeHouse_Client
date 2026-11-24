@@ -14,10 +14,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "All Cakes", href: "/cakes" },
-    { name: "Custom Orders", href: "/custom-orders" },
-    { name: "Occasions", href: "/occasions" },
-    { name: "About Us", href: "/about" },
+    { name: "All Cakes", href: "/PublicRoute/allcakes" },
+    { name: "Custom Orders", href: "/PublicRoute/customorders" },
+    { name: "Occasions", href: "/PublicRoute/occasions" },
+    { name: "About Us", href: "/PublicRoute/aboutus" },
   ];
 
   return (
