@@ -36,7 +36,7 @@ export default function CustomOrderBanner() {
                         </p>
                     </div>
                     <Link
-                        href="/custom-orders"
+                        href="/PublicRoute/customizecake"
                         className="px-8 py-3.5 bg-white text-pink-600 font-bold text-sm rounded-full shadow hover:bg-pink-50 transition flex-shrink-0"
                     >
                         Customize Your Cake

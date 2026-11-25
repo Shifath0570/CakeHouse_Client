@@ -21,16 +21,16 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
               <Link
-                href="/cakes"
+                href="/PublicRoute/allcakes"
                 className="px-8 py-3.5 text-sm font-semibold text-white bg-pink-600 rounded-full shadow-md hover:bg-pink-700 transition"
               >
                 Explore All Cakes
               </Link>
               <Link
-                href="/custom-orders"
+                href="/PublicRoute/customizecake"
                 className="px-8 py-3.5 text-sm font-semibold text-pink-600 bg-white border border-pink-600 rounded-full hover:bg-pink-50 transition"
               >
-                Order Custom Cake
+                Order Customize Cake
               </Link>
             </div>
           </div>
