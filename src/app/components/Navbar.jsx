@@ -15,7 +15,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "All Cakes", href: "/PublicRoute/allcakes" },
-    { name: "Custom Orders", href: "/PublicRoute/customorders" },
+    { name: "Customer Orders", href: "/PublicRoute/customerorders" },
     { name: "Occasions", href: "/PublicRoute/occasions" },
     { name: "About Us", href: "/PublicRoute/aboutus" },
   ];
