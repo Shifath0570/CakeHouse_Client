@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CustomerReview = () => {
+const AllCakes = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const CustomerReview = () => {
     );
 };
 
-export default CustomerReview;
+export default AllCakes;
