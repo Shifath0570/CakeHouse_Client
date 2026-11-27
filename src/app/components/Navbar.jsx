@@ -9,9 +9,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Replace this with your actual auth state (e.g., NextAuth session, Firebase, Clerk, etc.)
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const navItems = [
     { name: "Home", href: "/" },
     { name: "All Cakes", href: "/PublicRoute/allcakes" },
@@ -35,8 +32,8 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Middle: Navigation Items (Desktop) */}
-          <div className="hidden md:flex space-x-8">
+          {/* Right Side: Navigation Items (Desktop) */}
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -53,34 +50,6 @@ export default function Navbar() {
                 </Link>
               );
             })}
-          </div>
-
-          {/* Right Side: Login, Logout, Sign Up Buttons (Desktop) */}
-          <div className="hidden md:flex items-center space-x-3">
-            {!isLoggedIn ? (
-              <>
-                <Link
-                  href="/auth/signin"
-                  onClick={() => setIsLoggedIn(true)} // Demo toggle; remove in production
-                  className="px-4 py-2 text-sm font-semibold text-pink-600 border border-pink-600 rounded-full hover:bg-pink-50 transition"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="/auth/signup"
-                  className="px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full hover:bg-pink-700 transition"
-                >
-                  Sign Up
-                </Link>
-              </>
-            ) : (
-              <button
-                onClick={() => setIsLoggedIn(false)}
-                className="px-4 py-2 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition"
-              >
-                Logout
-              </button>
-            )}
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -122,42 +91,13 @@ export default function Navbar() {
               </Link>
             );
           })}
-
-          <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
-            {!isLoggedIn ? (
-              <>
-                <Link
-                  href="/auth/signin"
-                  onClick={() => {
-                    setIsLoggedIn(true);
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="w-full text-center px-4 py-2 text-sm font-semibold text-pink-600 border border-pink-600 rounded-full"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="/auth/signup"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full text-center px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full"
-                >
-                  Sign Up
-                </Link>
-              </>
-            ) : (
-              <button
-                onClick={() => {
-                  setIsLoggedIn(false);
-                  setIsMobileMenuOpen(false);
-                }}
-                className="w-full text-center px-4 py-2 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full"
-              >
-                Logout
-              </button>
-            )}
-          </div>
         </div>
       )}
     </nav>
   );
 }
+
+
+
+
+

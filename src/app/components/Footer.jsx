@@ -81,12 +81,10 @@ export default function Footer() {
                 placeholder="Your email for offers"
                 className="w-full px-3 py-2 text-sm border border-gray-200 rounded-full focus:outline-none focus:border-pink-600"
               />
-              <button
-                type="submit"
-                className="px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full hover:bg-pink-700 transition flex-shrink-0"
-              >
+              <Link href="/auth/signin"
+                className="px-4 py-2 text-sm font-semibold text-white bg-pink-600 rounded-full hover:bg-pink-700 transition flex-shrink-0">
                 Join
-              </button>
+              </Link>
             </form>
           </div>
         </div>
