@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-// import { authClient } from "@/lib/auth-client";
+// import { authClient } from "@/app/lib/auth-client";
+
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -161,3 +162,9 @@ export default function SignUpPage() {
     </div>
   );
 }
+
+
+
+
+
+
