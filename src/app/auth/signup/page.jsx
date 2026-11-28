@@ -1,10 +1,10 @@
+
 "use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-// import { authClient } from "@/app/lib/auth-client";
-
+import { authClient } from "../../lib/auth-client";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -154,7 +154,7 @@ export default function SignUpPage() {
         {/* Footer Link */}
         <p className="text-center text-sm text-gray-500">
           Already have an account?{" "}
-          <Link href="/login" className="font-semibold text-pink-600 hover:underline">
+          <Link href="/auth/signin" className="font-semibold text-pink-600 hover:underline">
             Sign In
           </Link>
         </p>
@@ -162,9 +162,6 @@ export default function SignUpPage() {
     </div>
   );
 }
-
-
-
 
 
 

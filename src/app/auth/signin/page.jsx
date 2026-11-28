@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-// import { authClient } from "@/app/lib/auth-client";
+import { authClient } from "../../lib/auth-client";
 
 export default function SignInPage() {
   const router = useRouter();
@@ -114,7 +114,7 @@ export default function SignInPage() {
         {/* Footer Link */}
         <p className="text-center text-sm text-gray-500">
           Don&apos;t have an account?{" "}
-          <Link href="/signup" className="font-semibold text-pink-600 hover:underline">
+          <Link href="/auth/signup" className="font-semibold text-pink-600 hover:underline">
             Sign Up
           </Link>
         </p>
@@ -122,7 +122,6 @@ export default function SignInPage() {
     </div>
   );
 }
-
 
 
 
